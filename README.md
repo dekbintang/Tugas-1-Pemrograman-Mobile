@@ -19,7 +19,7 @@ Aplikasi Android sederhana menggunakan Kotlin yang menampilkan Hello World dan i
 
 1. Clone repository
 ```bash
-git clone https://github.com/dekbintang/HelloWorldApp.git
+[git clone https://github.com/dekbintang/Tugas-1-Pemrograman-Mobile.git]
 ```
 
 2. Buka di Android Studio
