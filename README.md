@@ -2,11 +2,6 @@
 
 Aplikasi Android sederhana menggunakan Kotlin yang menampilkan Hello World dan identitas mahasiswa.
 
-## Screenshot
-
-![Tampilan Awal](screenshots/home.png)
-![Identitas](screenshots/identitas.png)
-
 ## Fitur
 
 - Menampilkan teks Hello World
