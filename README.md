@@ -4,6 +4,20 @@ Aplikasi Android sederhana yang menampilkan **Hello World!** dan tombol untuk me
 
 ---
 
+## 📸 Screenshot
+
+<p align="center">
+  <img src="screenshots/home.png" width="250" alt="Tampilan Awal"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshots/identitas.png" width="250" alt="Setelah Tombol Diklik"/>
+</p>
+
+<p align="center">
+  <em>Tampilan Awal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Setelah Tombol Diklik</em>
+</p>
+
+---
+
 ## 🎯 Fitur
 
 - Menampilkan teks **"Hello World!"** saat aplikasi dibuka
@@ -13,22 +27,14 @@ Aplikasi Android sederhana yang menampilkan **Hello World!** dan tombol untuk me
 
 ---
 
-## 📸 Screenshot
-
-| Tampilan Awal | Setelah Tombol Diklik |
-|:---:|:---:|
-| ![Tampilan Awal](screenshots/home.png) | ![Identitas Tampil](screenshots/identitas.png) |
-
----
-
 ## 🛠️ Teknologi yang Digunakan
 
-| Teknologi | Versi |
+| Teknologi | Keterangan |
 |---|---|
 | Language | Kotlin |
-| Min SDK | API 24 (Android 7.0) |
+| Min SDK | API 24 (Android 7.0 Nougat) |
 | Target SDK | API 35 (Android 15) |
-| Android Studio | Ladybug / 2024.x |
+| IDE | Android Studio |
 | Build System | Gradle (Kotlin DSL) |
 
 ---
@@ -38,20 +44,18 @@ Aplikasi Android sederhana yang menampilkan **Hello World!** dan tombol untuk me
 ```
 HelloWorldApp/
 ├── app/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/com/example/helloworldapp/
-│   │       │   └── MainActivity.kt        ← Logika utama aplikasi
-│   │       ├── res/
-│   │       │   ├── layout/
-│   │       │   │   └── activity_main.xml  ← Desain tampilan UI
-│   │       │   └── values/
-│   │       │       ├── strings.xml
-│   │       │       └── themes.xml
-│   │       └── AndroidManifest.xml        ← Konfigurasi aplikasi
-│   └── build.gradle.kts
-├── gradle/
-│   └── libs.versions.toml
+│   └── src/
+│       └── main/
+│           ├── java/com/example/helloworldapp/
+│           │   └── MainActivity.kt        ← Logika utama aplikasi
+│           ├── res/
+│           │   └── layout/
+│           │       └── activity_main.xml  ← Desain tampilan UI
+│           └── AndroidManifest.xml
+├── screenshots/
+│   ├── home.png                           ← Screenshot tampilan awal
+│   └── identitas.png                      ← Screenshot setelah klik tombol
+├── build.gradle.kts
 └── README.md
 ```
 
@@ -66,21 +70,21 @@ HelloWorldApp/
 
 ### Langkah-langkah
 
-1. **Clone repository ini**
-   ```bash
-   git clone https://github.com/NamaKamu/HelloWorldApp.git
-   ```
+**1. Clone repository ini**
+```bash
+git clone https://github.com/dekbintang/HelloWorldApp.git
+```
 
-2. **Buka di Android Studio**
-   ```
-   File → Open → Pilih folder HelloWorldApp
-   ```
+**2. Buka di Android Studio**
+```
+File → Open → Pilih folder HelloWorldApp
+```
 
-3. **Tunggu Gradle Sync selesai**
+**3. Tunggu Gradle Sync selesai**
 
-4. **Jalankan aplikasi**
-   - Gunakan emulator: `Run ▶ (Shift + F10)`
-   - Atau hubungkan perangkat Android via USB dengan USB Debugging aktif
+**4. Jalankan aplikasi**
+- Emulator: klik tombol **Run ▶** atau tekan `Shift + F10`
+- Perangkat fisik: hubungkan via USB dengan **USB Debugging** aktif
 
 ---
 
@@ -90,7 +94,8 @@ HelloWorldApp/
 ```xml
 <LinearLayout
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:padding="24dp">
 
     <TextView
         android:id="@+id/tvHello"
@@ -104,7 +109,8 @@ HelloWorldApp/
 
     <TextView
         android:id="@+id/tvIdentitas"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:textColor="#1976D2" />
 
 </LinearLayout>
 ```
